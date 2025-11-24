@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>WIFEE.  — Home</title>
+  <link rel="stylesheet" href="assets/css/2style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="title">WIFEE. </div>
+    <nav class="nav">
+      <a href="2index.html" class="active">Home</a>
+      <a href="2admin.html">Admin Login</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <h2 class="section-title">All Entries</h2>
+    <div id="postsList" class="cards-grid"></div>
+  </main>
+
+  <script src="assets/js/2app.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', ()=> {
+      if(window.App && typeof App.renderHome === 'function') App.renderHome();
+    });
+  </script>
+</body>
+</html>

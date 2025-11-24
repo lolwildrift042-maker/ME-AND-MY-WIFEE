@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>WIFEE.  — Intro</title>
+  <link rel="stylesheet" href="assets/css/2style.css">
+</head>
+<body class="intro-page">
+
+  <main class="intro-container">
+    <div class="intro-box">
+      <div class="intro-title">WIFEE. </div>
+      <p class="intro-message">About the creator: one thing about me is that I love my wife so much and I made this for her.</p>
+      <button id="enterBtn" class="btn intro-btn">Enter</button>
+    </div>
+  </main>
+
+  <script>
+    document.getElementById('enterBtn').addEventListener('click', ()=>{
+      // soft fade then go to home
+      document.body.classList.add('fade-out');
+      setTimeout(()=> window.location.href = '2index.html', 400);
+    });
+  </script>
+</body>
+</html>
